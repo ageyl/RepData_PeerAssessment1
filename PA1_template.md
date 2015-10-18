@@ -8,9 +8,8 @@ ageyl
 After forking the github repository and setting the working directory to the "RepData_PeerAssessment1" folder, the activity data is unzipped and loaded into a data.table using "fread" rather than "read.csv":
 
 
-
-
 ```r
+setwd("/Users/andy/Coursera/DataScience/Reproducible_Research/RepData_PeerAssessment1")
 unzip("activity.zip", files = "activity.csv")
 library(data.table)
 activity_dt <- fread("activity.csv")

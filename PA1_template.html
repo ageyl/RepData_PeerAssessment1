@@ -71,7 +71,8 @@ img {
 <div id="loading-the-data" class="section level3">
 <h3>Loading the data</h3>
 <p>After forking the github repository and setting the working directory to the “RepData_PeerAssessment1” folder, the activity data is unzipped and loaded into a data.table using “fread” rather than “read.csv”:</p>
-<pre class="r"><code>unzip(&quot;activity.zip&quot;, files = &quot;activity.csv&quot;)
+<pre class="r"><code>setwd(&quot;/Users/andy/Coursera/DataScience/Reproducible_Research/RepData_PeerAssessment1&quot;)
+unzip(&quot;activity.zip&quot;, files = &quot;activity.csv&quot;)
 library(data.table)
 activity_dt &lt;- fread(&quot;activity.csv&quot;)</code></pre>
 </div>
